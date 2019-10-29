@@ -11,11 +11,11 @@ const Wrapper = styled.ul`
   display: flex;
   justify-content: center;
   flex-direction: row;
-`
+`;
 const Item = styled.li`
-  color : palegreen; 
-  flex: 1; 
-`
+  color: palegreen;
+  flex: 1;
+`;
 
 function App() {
   return (
