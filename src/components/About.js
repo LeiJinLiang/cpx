@@ -1,5 +1,3 @@
-import React from 'react';
+import React from "react";
 
-export const About = () => (
-    <h4>About</h4>
-)
+export const About = () => <h4>About</h4>;

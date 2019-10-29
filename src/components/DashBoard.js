@@ -1,5 +1,3 @@
-import React from 'react';
+import React from "react";
 
-export const DashBoard = () => (
-    <h4>DashBoard</h4>
-)
+export const DashBoard = () => <h4>DashBoard</h4>;
