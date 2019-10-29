@@ -5,6 +5,17 @@ import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { DashBoard } from "./components/DashBoard";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import styled from "styled-components";
+const Wrapper = styled.ul`
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+`;
+const Item = styled.li`
+  color: palegreen;
+  flex: 1;
+`;
 
 function App() {
   return (
@@ -14,17 +25,17 @@ function App() {
       </header>
       <div>
         <Router>
-          <ul>
-            <li>
+          <Wrapper>
+            <Item>
               <Link to="/">Home</Link>
-            </li>
-            <li>
+            </Item>
+            <Item>
               <Link to="/about">About</Link>
-            </li>
-            <li>
+            </Item>
+            <Item>
               <Link to="/dashboard">Dashboard</Link>
-            </li>
-          </ul>
+            </Item>
+          </Wrapper>
           <hr />
           <Switch>
             <Route exact={true} path="/">
