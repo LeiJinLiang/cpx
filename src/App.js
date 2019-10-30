@@ -58,7 +58,7 @@ const Aside = styled(Column)`
   --width-mobile: 12;
   --width-tablet: 6;
   --width-desktop: 4;
-  height : 64rem;
+  height: 64rem;
 `;
 
 function App() {
