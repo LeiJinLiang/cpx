@@ -23,7 +23,6 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      <h4>----{process.env.PUBLIC_URL}</h4>
       <div>
         <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Wrapper>
