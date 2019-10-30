@@ -24,7 +24,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <div>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Wrapper>
             <Item>
               <Link to="/">Home</Link>
