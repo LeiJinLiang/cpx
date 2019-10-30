@@ -4,7 +4,7 @@ import "./App.css";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { DashBoard } from "./components/DashBoard";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import styled from "styled-components";
 const Wrapper = styled.ul`
   list-style: none;
@@ -23,8 +23,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
+      <h4>----{process.env.PUBLIC_URL}</h4>
       <div>
-        <Router basename={process.env.PUBLIC_URL}>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Wrapper>
             <Item>
               <Link to="/">Home</Link>
@@ -48,7 +49,7 @@ function App() {
               <DashBoard />
             </Route>
           </Switch>
-        </Router>
+        </BrowserRouter>
       </div>
     </div>
   );
